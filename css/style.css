@@ -36,12 +36,16 @@ body {
 .footer {
   background: #666;
   color: #fff;
-  align-items: center;
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
-footer p {
+.footer p {
   text-align: center;
+  width: 100%;
 }
 
 /* LINK STYLES / NAV STYLES */
@@ -476,3 +480,148 @@ a:focus {
   padding: 5px;
   margin: 5px;
 }
+
+/*MEDIA QUERIES FOR RESPONSIVENESS*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .columns {
+      flex-direction: column;
+    }
+    .sidebar-left {
+      width: 100%;
+    }
+  
+    .main {
+      width: 100%;
+    }
+  
+    .sidebar-right {
+      width: 100%;
+    }
+  
+    .sidebar-right img {
+      width: 40%;
+    }
+  
+    .login-form {
+      width: 50%;
+    }
+  
+    .footer {
+      width: 100%;
+    }
+
+    .footer p {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+  .sidebar-left {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .sidebar-right {
+    width: 100%;
+  }
+
+  .sidebar-right img {
+    width: 40%;
+  }
+
+  .login-form {
+    width: 50%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer p {
+    text-align: center;
+    width: 100%;
+  }
+}
+ 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .columns {
+    flex-direction: column;
+  }
+  .sidebar-left {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .sidebar-right {
+    width: 100%;
+  }
+
+  .sidebar-right img {
+    width: 40%;
+  }
+
+  .login-form {
+    width: 50%;
+  }
+  .footer {
+    width: 100%;
+  }
+
+  .footer p {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .columns {
+    flex-direction: column;
+  }
+  .sidebar-left {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .sidebar-right {
+    width: 100%;
+  }
+
+  .sidebar-right img {
+    width: 40%;
+  }
+
+  .login-form {
+    width: 50%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer p {
+    text-align: center;
+    width: 100%;
+  } 
+}
+
