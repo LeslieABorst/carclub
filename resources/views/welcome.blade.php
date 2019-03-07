@@ -1,99 +1,98 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <title>Laravel</title>
+    <title>Plymouth Owners Club</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+</head>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
 
-            .full-height {
-                height: 100vh;
-            }
+<body>
+<div class="wrapper">
+    <header class="header">
+        <img class ="header-img" src="images/headerimage2.jpg" title="Plymouth Owners Club Founded 1957" alt="Plymouth Owners Club logo and a lineup of classic cars.">
+    </header>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    <section class="content">
+        <div class="columns">
+            <main class="main">
+                <h2>About the Plymouth Owners Club</h2>
+                <p>
+                    Founded in 1957 as the Plymouth 4 Cylinder Owners Club with just three members, today the Plymouth Club recognizes ALL 4, 6 and V8 powered Plymouth cars, Plymouth trucks and Fargo commercial vehicles built from 1928 to the end of production in 2001 that means ALL Plymouths ever made are now recognized by the club.
+                    Membership has grown from those first three to over 3,500 members worldwide with members in every U.S. state, most Canadian provinces and over 20 countries overseas. The Plymouth Club has many Regional groups in the United States and Canada.
 
-            .position-ref {
-                position: relative;
-            }
+                    The Plymouth Club has a full complement of Technical Advisors for each model year to assist you with restoration advice for your car. Done on a voluntary basis by members with expertise on their model, this service is also free to members.
+                </p>
+                <div id="double">
+                    <img src="images/first.png">
+                    <img src="images/sunset.png">
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <p>
+                    Ours is a family oriented organization with membership covering all members of your family.
+                    You do not need to own a club recognized vehicle to join. The Plymouth Club invites you to share our enthusiasm and dedication to the preservation and restoration of the Plymouth and Fargo lines and to enjoy the fellowship of our members.
+                </p>
+                <div id="single">
+                    <img src="images/policecar.png">
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+            </main>
+            <aside class="sidebar-left">
+                <form class="login-form" method="post" action="#">
+                    <h3>Members Login</h3>
+                    <!--LOGIN AND REROUTE TO MEMBERS/MEMINDEX.HTML-->
+                    <input type="username" name="username" placeholder="username" >
+                    <input type="password" name="password" placeholder="password" >
+
+                    <button type="submit" class="btn">Login</button>
+                </form>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="membercars.html">Members Cars</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="howto.html">How to Become a Member</a></li>
+                        <li><a href="discuss.html">Discussion Boards</a></li>
+                        <li><a href="https://www.facebook.com/groups/POCNational/" target="_blank">Find Us on Facebook!</a></li>
+                    </ul>
+                </nav>
+
+            </aside>
+
+            <aside class="sidebar-right">
+
+                <h3><a href="ethal.html" target="_blank">The Ethel Miller Story</a></h3>
+
+                <img src="images/miller.jpg">
+
+                <h3><a href="richardson.html" target="_blank">The Richardson Pan-American Expedition</a></h3>
+
+                <img src="images/panam.jpg">
+
+
+                <h3><a href="irma.html" target="_blank">Irma Darre-Brandt</a></h3>
+
+                <img src="images/Irma.jpg">
+
+
+            </aside>
         </div>
-    </body>
+    </section>
+
+    <footer class="footer">
+        <p>
+            <a href="https://www.facebook.com/groups/POCNational/">Find Us on Facebook |</a>
+            <a href="mailto:join@plymouthowners.club"> Send us an email</a>
+        </p>
+        <p>
+            Copyright &copy; 2019, Plymouth Owners Club INC | Designed and developed by Leslie A Borst.
+        </p>
+    </footer>
+</div>
+</body>
 </html>

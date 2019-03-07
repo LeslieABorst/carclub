@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <title>Plymouth Owners Club</title>
+
+</head>
+
+
+<body>
+<a name="top"></a>
+<div class="wrapper">
+    <header class="header">
+        <img class ="header-img" src="images/headerimage2.jpg" title="Plymouth Owners Club Founded 1957" alt="Plymouth Owners Club logo and a lineup of classic cars.">
+    </header>
+
+    <section class="content">
+        <div class="columns">
+            <main class="main">
+                <h2>Events</h2>
+
+                <h1>More events coming soon</h1>
+
+            </main>
+            <aside class="sidebar-left">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="membercars.html">Members Cars</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="howto.html">How to Become a Member</a></li>
+                        <li><a href="discuss.html">Discussion Boards</a></li>
+                        <li><a href="https://www.facebook.com/groups/POCNational/" target="_blank">Find Us on Facebook!</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <aside class="sidebar-right">
+
+                <h3><a href="ethal.html" target="_blank">The Ethel Miller Story</a></h3>
+
+                <img src="images/miller.jpg">
+
+                <h3><a href="richardson.html" target="_blank">The Richardson Pan-American Expedition</a></h3>
+
+                <img src="images/panam.jpg">
+
+
+                <h3>Irma Darre-Brandt</h3>
+
+                <img src="images/irma.jpg">
+
+
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            <a href="https://www.facebook.com/groups/POCNational/">Find Us on Facebook |</a>
+            <a href="mailto: join@plymouthowners.club"> Send us an email</a>
+        </p>
+        <p>
+            Copyright &copy; 2019, Plymouth Owners Club INC | Designed and developed by Leslie A Borst</a>.
+        </p>
+    </footer>
+</div>
+</body>
+</html>
