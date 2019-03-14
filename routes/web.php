@@ -88,3 +88,6 @@ Route::get('memberreg.html', function () {
 Route::get('richardson.html', function () {
     return redirect()->route('richardson');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
