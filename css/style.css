@@ -145,10 +145,13 @@ p {
   padding: 5px;
   margin: 10px;
 }
+.caps {
+  font-variant: small-caps;
+}
 
 /*LEFT SIDEBAR STYLES*/
 
-.sidebar-left{
+.sidebar-left {
   width: 20%;
   background: #ccc;
   order: 1;
@@ -157,22 +160,10 @@ p {
   align-items: center;  
 }
 
-#meet {
-  border-radius: 50%;
-  margin: 20px;
-}
-
-h4 em {
-  text-align: center;
-}
-
-.caps {
-  font-variant: small-caps;
-}
 
 /*RIGHT SIDEBAR STYLES*/
 
-.sidebar-right{ 
+.sidebar-right { 
   width: 20%;
   order: 3;
   background: #ccc;
@@ -192,22 +183,24 @@ h4 em {
 
 /* IMAGE STYLES*/
 
-#double img {
-  height: 200px;
-  width: 0 auto;
-  padding: 10px;
-}
-
-.sidebar-right img {
+.sidebar-right > img {
   width: 60%;
   height: auto;
 }
+
+
 #double {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
+}
+
+#double > img {
+  height: 200px;
+  width: 0 auto;
+  padding: 10px;
 }
 
 #single {
@@ -243,6 +236,14 @@ h4 em {
   align-self: center;
 }
 
+.meet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin-top: 35px;
+}
 
 figure {
   margin: 0px 20px 0px 20px;
@@ -258,7 +259,7 @@ figcaption {
 
 
 
-/* LOGIN FORM / LOGOUT STYLES */
+/* FORM STYLES */
 
 .login-form {
   display: flex;
@@ -271,16 +272,16 @@ figcaption {
   width: 90%;
 }
 
-.login-form input {
+.login-form > input {
   margin-bottom: 10px;
   font-size: 1.2em;
 }
 
-.login-form button {
+.login-form > button {
   font-size: 1.2em;
 }
 
-form h3 {
+form > h3 {
   margin: 0;
 }
 
@@ -301,14 +302,14 @@ form h3 {
   flex-direction: row;
 }
 
-#register fieldset {
+#register > fieldset {
   margin: 15px 0px 15px 0px;
   width: auto;
   display: flex;
   align-self: center;
 }
 
-#register legend {
+#register > legend {
   border: 1px solid #000000;
   background:#0100fe;
   color: #ffffff;
@@ -318,18 +319,18 @@ form h3 {
   font-size: 18px;
 }
 
-#register input {
+#register > input {
   margin: 2.5px 5px 2.5px 5px;
 }
 
-#register label {
+#register > label {
   margin: 2.5px 5px 2.5px 5px;
   font-weight: bold;
   font-variant: small-caps;
   font-size: 16px;
 }
 
-#register button {
+#register > button {
   align-self: center;
   font-size: 20px;
   width: 200px;
@@ -341,14 +342,14 @@ form h3 {
   border: none;
 }
 
-#register button:hover,
+#register > button:hover,
 a:focus {
   color: white;
   text-decoration: underline;
 
 }
 
-#register button:active {
+#register > button:active {
   text-decoration: underline;
   box-shadow: none;
 }
@@ -363,11 +364,11 @@ a:focus {
   border: 2px dashed red;
 }
 
-#important h2 {
+#important > h2 {
   color: #0100fe;
 }
 
-#important p {
+#important > p {
   color: darkred;
 }
 
@@ -380,13 +381,13 @@ a:focus {
   align-self: center;
 }
 
-.mem-reg input {
+.mem-reg > input {
   width: 50%;
   margin: 10px;
   font-size: 1.2em;
 }
 
-.mem-reg button {
+.mem-reg > button {
   width: 50%;
   margin: 10px;
   font-size: 1.2em;
@@ -403,7 +404,7 @@ a:focus {
   justify-content: center;
 }
 
-.links img {
+.links > img {
   display: flex;
   flex: auto;
   max-width: 350px;
@@ -419,16 +420,16 @@ a:focus {
   margin: 5px;
 }
 
-#right img {
+#right > img {
   max-width: 200px;
   height: auto;
 }
 
-#right ul {
+#right > ul {
   padding: 5px 30px;
 }
 
-#right{
+#right {
   width: 60%;
   margin: 5px;
   background: white;
@@ -440,15 +441,15 @@ a:focus {
   background: lightgoldenrodyellow;
 }
 
-#left h5 {
+#left > h5 {
   margin: 10px;
 }
 
-.club p {
+.club > p {
   text-align: center;
 }
 
-.club h3 {
+.club > h3 {
   margin: 5px;
 }
 
@@ -468,14 +469,14 @@ a:focus {
   background: white;
 }
 
-.addy h3 {
+.addy > h3 {
   margin: 5px;
   color: #0100fe;
   font-variant: small-caps;
   padding: 5px;
 }
 
-.addy p{
+.addy > p{
   text-align: center;
   padding: 5px;
   margin: 5px;
@@ -500,7 +501,11 @@ a:focus {
       width: 100%;
     }
   
-    .sidebar-right img {
+    .sidebar-right > img {
+      width: 40%;
+    }
+
+    .sidebar-left > img {
       width: 40%;
     }
   
@@ -512,7 +517,7 @@ a:focus {
       width: 100%;
     }
 
-    .footer p {
+    .footer > p {
       text-align: center;
       width: 100%;
     }
@@ -536,7 +541,10 @@ a:focus {
     width: 100%;
   }
 
-  .sidebar-right img {
+  .sidebar-right > img {
+    width: 40%;
+  }
+  .sidebar-left > img {
     width: 40%;
   }
 
@@ -548,7 +556,7 @@ a:focus {
     width: 100%;
   }
 
-  .footer p {
+  .footer > p {
     text-align: center;
     width: 100%;
   }
@@ -572,7 +580,10 @@ a:focus {
     width: 100%;
   }
 
-  .sidebar-right img {
+  .sidebar-right > img {
+    width: 40%;
+  }
+  .sidebar-left > img {
     width: 40%;
   }
 
@@ -583,7 +594,7 @@ a:focus {
     width: 100%;
   }
 
-  .footer p {
+  .footer > p {
     text-align: center;
     width: 100%;
   }
@@ -607,7 +618,11 @@ a:focus {
     width: 100%;
   }
 
-  .sidebar-right img {
+  .sidebar-right > img {
+    width: 40%;
+  }
+
+  .sidebar-left > img {
     width: 40%;
   }
 
@@ -619,7 +634,7 @@ a:focus {
     width: 100%;
   }
 
-  .footer p {
+  .footer > p {
     text-align: center;
     width: 100%;
   } 
